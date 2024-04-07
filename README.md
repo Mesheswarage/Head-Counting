@@ -1,6 +1,8 @@
 # Head-Counting
 This project utilizes image segmentation techniques to perform head counting in images. The method employed here involves training a convolutional neural network (CNN) on labeled images with corresponding mask images, enabling accurate segmentation of heads within the images. The segmented regions are then counted to provide an estimate of the number of heads present.
 
+The convolutional neural network architecture used in this project follows the U-Net structure. U-Net is a popular architecture for image segmentation tasks, characterized by its encoder-decoder design with skip connections. The encoder pathway captures context, while the decoder pathway facilitates precise localization. The final layer of the network employs a sigmoid activation function to generate pixel-wise predictions, indicating the probability of each pixel belonging to the target class.
+
 Key Features:
 
 - Utilizes  image segmentation techniques for accurate head detection.
